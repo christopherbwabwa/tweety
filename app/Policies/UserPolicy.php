@@ -9,7 +9,7 @@ class UserPolicy
 {
     use HandlesAuthorization;
 
-   public function edit(User $current_user,User $user)
+   public function edit(User $current_user, User $user)
    {
        return $current_user->is($user);
    }

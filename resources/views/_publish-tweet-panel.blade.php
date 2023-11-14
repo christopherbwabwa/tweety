@@ -8,11 +8,12 @@
 
         <footer class="flex justify-between items-center">
 
-            <img src="{{ auth()->user()->avatar }}" alt="Your avatar" class="rounded-full mr-2" height="50px" width="50px">
+            <img src="{{ auth()->user()->avatar }}" alt="Your avatar" class="rounded-full mr-2" height="50px"
+                width="50px">
 
-            <button type="submit" class="bg-blue-500 hover:bg-blue-600 rounded-lg shadow px-10 text-sm text-white h-10">
+            @component('components.button')
                 Publish
-            </button>
+            @endcomponent
 
         </footer>
     </form>

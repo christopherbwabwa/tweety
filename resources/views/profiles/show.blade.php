@@ -3,8 +3,7 @@
     <header class="mb-2 relative">
         <div class="relative">
 
-            <img src="/images/amaterasu.png" alt="" >
-            
+            <img src="/images/amaterasu.png" alt="">
             <img 
             src="{{ $user->avatar }}" 
             alt="Your avatar" 
@@ -23,11 +22,11 @@
             </div>
 
             <div class="flex">
-                @can('edit',$user)
+                @can('edit', $user)
                     
                     <a 
                         href="{{ $user->path('edit') }}" 
-                        class="rounded-full border border-gray-300 py-2 px-4 text-black text-xs mr-3"
+                        class="rounded-full border border-gray-300 py-2 px-4 text-black text-xs mr-3 hover:text-red-400"
                         >
                         Edit Profile
                     </a> 

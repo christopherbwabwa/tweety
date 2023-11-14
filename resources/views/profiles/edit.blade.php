@@ -1,5 +1,4 @@
 @component('components.app')
-
     <form method="POST" action="{{ $user->path() }}" enctype="multipart/form-data">
         @csrf
         @method('PATCH')
@@ -9,8 +8,8 @@
             <label for="name" class="block mb-2 uppercase font-bold text-xs text-gray-700">
                 Name
             </label>
-            <input class="border border-gray-400 p-2 w-full" type="text" name="name" id="name" value="{{ $user->name }}"
-                required>
+            <input class="border border-gray-400 p-2 w-full" type="text" name="name" id="name"
+                value="{{ $user->name }}" required>
         </div>
 
 
@@ -52,11 +51,6 @@
 
         </div>
 
-
-
-
-        {{-- /email/ --}}
-
         <div class="mb-6">
             <label for="email" class="block mb-2 uppercase font-bold text-xs text-gray-700">
                 Email
@@ -70,7 +64,6 @@
             <p class="text-red-500 text-xs mt-2">{{ $message }}</p>
         @enderror
 
-        {{-- password --}}
 
         <div class="mb-6">
             <label for="password" class="block mb-2 uppercase font-bold text-xs text-gray-700">

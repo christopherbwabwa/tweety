@@ -11,6 +11,7 @@ class ExploreController extends Controller
     {
         $this->middleware('auth');
     }
+    
     public function __invoke()
     {
         return view('explore', [

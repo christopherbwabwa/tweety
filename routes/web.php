@@ -18,13 +18,16 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::middleware('auth')->group(function()
-// {
-//     Route::get('/tweets', 'TweetController@index')->name('home');
-//     Route::post('/tweets', 'TweetController@store');
-// });
+Route::middleware('auth')->group(function()
+{
+    Route::get('/tweets', 'TweetController@index')->name('home');
+    Route::post('/tweets', 'TweetController@store');
+});
 
-Route::get('/tweets', 'TweetController@index')->name('home');
+// Route::get('/tweets', 'TweetController@index')->name('home');
+// Route::post('/tweets/{tweet}/like', 'TweetLikesController@store');
+
+Route::delete('/tweets/{tweet}/like', 'TweetLikesController@destroy');
 
 Route::post('/tweets', 'TweetController@store');
 

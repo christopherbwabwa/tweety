@@ -3,8 +3,8 @@
     @forelse ($tweets as $tweet)
         @include('_tweet')
     @empty
-    <p class="p-4">No tweet yet.</p>
+        <p class="p-4">No tweet yet.</p>
     @endforelse
-    
+
     {{ $tweets->links() }}
 </div>

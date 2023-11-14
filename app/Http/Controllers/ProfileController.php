@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\User;
-use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 
 class ProfileController extends Controller
@@ -17,7 +16,7 @@ class ProfileController extends Controller
     {
         return view('profiles.show', [
             'user' => $user,
-            'tweets' => $user->tweets()->paginate(50)
+            'tweets' => $user->tweets()->withLikes()->paginate(50)
         ]);
     }
 
