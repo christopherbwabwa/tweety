@@ -1,13 +1,14 @@
 # Tweety (Based on the tweety app from Laracast by Jeffrey Way)
 
-- A simple minimal application based on twitter with ability to :
+# Usage
 
+- A simple minimal application based on twitter with ability to :
 - Register & Login
 - Post some tweets
 - Like tweets
 - Follow & unfollow others users and so on...
 
-#Usage
+## How to install ?
 
 To get started you need to clone to repo on your local machine.
 
