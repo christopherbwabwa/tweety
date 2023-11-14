@@ -10,10 +10,10 @@
 
 ## How to install ?
 
-To get started you need to clone to repo on your local machine.
+To get started you need to clone the repo on your local machine.
 
 Then you can run the command ***composer install*** .
 
-Then run ***npm install*** &  ***npm run dev*** .
+After that run ***npm install*** &  ***npm run dev*** .
 
-Then you can register and enjoy the application.
+Finally you can register and enjoy the application.
