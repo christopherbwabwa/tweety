@@ -1,19 +1,29 @@
-# Tweety (Based on the tweety app from Laracast by Jeffrey Way)
+# Tweety (Based on Twitter)
+
+A minimal X (Twitter) application with interesting functionalities.
 
 # Usage
 
-- A simple minimal application based on twitter with ability to :
-- Register & Login
-- Post some tweets
-- Like tweets
-- Follow & unfollow others users and so on...
+A simple twitter application where a user can:
+
+- Sign in or Sign Up.
+- Have friends (follow & unfollow others users).
+- Post tweets or like them.
+- Check profiles, update them and so on...
 
 ## How to install ?
 
 To get started you need to clone the repo on your local machine.
 
-Then you can run the command ***composer install*** .
+```bash
+git clone https://github.com/christopherbwabwa/tweety.git
+composer install
+cp .env.example .env
+npm install && npm run dev
+```
+Don't forget about the database
 
-After that run ***npm install*** &  ***npm run dev*** .
-
-Finally you can register and enjoy the application.
+```bash
+php artisan db
+create database tweety
+```
